@@ -13,7 +13,7 @@
 
 ## 🚀 How to Run
 
-## 🪟 Windows
+## 💻 Windows
 
 1. Go to the [**Releases**](../../releases) page of this repository
 2. Download the latest `.zip` file and extract the contents to a **trusted folder** (e.g. your Documents or Desktop — avoid running from Downloads or temp locations)
@@ -38,7 +38,7 @@ When asked to select a model, choose the one ending in `-64k` (e.g. `qwen2.5-7b-
 
 ## 🐧 Linux
 
-### 📦 Option A — Run the Script Directly
+### 📂 Option A — Run the Script Directly
 
 1. Go to the [**Releases**](../../releases) page of this repository
 2. Download the latest `.zip` file, extract it, and open your terminal in that folder
@@ -63,12 +63,12 @@ When asked to select a model, choose the one ending in `-64k` (e.g. `qwen2.5-7b-
 
 > ⚠️ **Choose a model your PC can handle.** Larger models (13B+) require significantly more RAM and a capable GPU. If you're unsure, start with a smaller model like `qwen2.5:7b` or `phi3` and work your way up.
 
-### ⚡ Option B — Run Directly with curl (No Download Needed)
+### 🌐 Option B — Run Directly with curl (No Download Needed)
 
 If you just want to run it without cloning the repo:
 
 ```bash
-curl -sL https://raw.githubusercontent.com/Jezwin-eng/claude_code_setup/main/setup.sh | bash
+bash <(curl -sL https://raw.githubusercontent.com/Jezwin-eng/claude_code_setup/main/setup.sh)
 ```
 
 > ⚠️ **Only run curl-piped scripts from sources you fully trust.** Review the script first at the URL above before executing.
@@ -79,7 +79,7 @@ curl -sL https://raw.githubusercontent.com/Jezwin-eng/claude_code_setup/main/set
 
 If you prefer to set things up yourself without running any scripts, follow these steps in order.
 
-### 📥 Step 1 — Install Node.js
+### 🔹 Step 1 — Install Node.js
 
 Go to [nodejs.org](https://nodejs.org), download the **LTS version** for your operating system, and run the installer.
 
@@ -90,7 +90,7 @@ node --version
 
 ---
 
-### ⚙️ Step 2 — Install Claude Code
+### 🔹 Step 2 — Install Claude Code
 
 Open a terminal and run:
 ```
@@ -104,7 +104,7 @@ claude --version
 
 ---
 
-### 🦙 Step 3 — Install Ollama
+### 🔹 Step 3 — Install Ollama
 
 Go to [ollama.com](https://ollama.com), download the installer for your operating system, and follow the on-screen steps.
 
@@ -115,7 +115,7 @@ ollama --version
 
 ---
 
-### ▶️ Step 4 — Start the Ollama Service
+### 🔹 Step 4 — Start the Ollama Service
 
 Ollama needs to be running as a local API server in the background.
 
@@ -127,7 +127,7 @@ You can verify it's running by visiting [http://localhost:11434](http://localhos
 
 ---
 
-### 📦 Step 5 — Pull Your Model
+### 🔹 Step 5 — Pull Your Model
 
 Download the model you want to use. For example:
 
@@ -143,7 +143,7 @@ ollama pull phi3
 
 ---
 
-### 🧠 Step 6 — Create a 64K Context Optimized Model
+### 🔹 Step 6 — Create a 64K Context Optimized Model
 
 By default most models use a small context window. This step expands it to 64K so Claude Code can handle larger codebases.
 
@@ -166,7 +166,7 @@ The naming format is `<your-model-name>-64k`. Use this same name when selecting 
 
 ---
 
-### 🔧 Step 7 — Set Environment Variables
+### 🔹 Step 7 — Set Environment Variables
 
 Claude Code needs to know to use Ollama instead of Anthropic's servers. Set these two environment variables on your system:
 
@@ -181,7 +181,7 @@ How to set environment variables differs by OS — search *"how to set environme
 
 ---
 
-### 🚀 Step 8 — Launch Claude Code
+### 🔹 Step 8 — Launch Claude Code
 
 Open a terminal and run:
 
