@@ -13,6 +13,8 @@
 
 ## 🚀 How to Run
 
+## 🪟 Windows
+
 1. Go to the [**Releases**](../../releases) page of this repository
 2. Download the latest `.zip` file and extract the contents to a **trusted folder** (e.g. your Documents or Desktop — avoid running from Downloads or temp locations)
 3. **Double-click `claude.bat`**
@@ -31,6 +33,45 @@ When asked to select a model, choose the one ending in `-64k` (e.g. `qwen2.5-7b-
 
 > **Note:** You may see a SmartScreen security warning since the script is unsigned.  
 > Click **"More info" → "Run anyway"** to proceed.
+
+---
+
+## 🐧 Linux
+
+### Option A — Run the Script Directly
+
+1. Go to the [**Releases**](../../releases) page of this repository
+2. Download the latest `.zip` file, extract it, and open your terminal in that folder
+3. Make it executable (only needs to be done once):
+   ```bash
+   chmod +x setup.sh
+   ```
+4. Run it:
+   ```bash
+   ./setup.sh
+   ```
+4. When prompted, type your Ollama model name (e.g. `qwen2.5:7b`) and press Enter
+5. The script handles everything automatically
+
+Once setup is complete, open a terminal in any trusted folder and run:
+
+```
+ollama launch claude
+```
+
+When asked to select a model, choose the one ending in `-64k` (e.g. `qwen2.5-7b-64k`).
+
+> ⚠️ **Choose a model your PC can handle.** Larger models (13B+) require significantly more RAM and a capable GPU. If you're unsure, start with a smaller model like `qwen2.5:7b` or `phi3` and work your way up.
+
+### Option B — Run Directly with curl (No Download Needed)
+
+If you just want to run it without cloning the repo:
+
+```bash
+curl -sL https://raw.githubusercontent.com/Jezwin-eng/claude_code_setup/main/setup.sh | bash
+```
+
+> ⚠️ **Only run curl-piped scripts from sources you fully trust.** Review the script first at the URL above before executing.
 
 ---
 
