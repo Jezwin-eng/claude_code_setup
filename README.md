@@ -4,14 +4,14 @@
 
 ---
 
-## ✨ Features
+##  Features
 
 - **Zero manual setup** — installs everything it needs automatically (Node.js, Claude Code, Ollama)
 - **Your choice of model** — works with any Ollama-compatible model: `qwen2.5:7b`, `llama3:8b`, `phi3`, and more
 
 ---
 
-## 🚀 How to Run
+##  How to Run
 
 ## 🪟 Windows
 
